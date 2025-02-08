@@ -1,4 +1,4 @@
-package com.studyjun.running.security;
+package com.studyjun.running.security.handler;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

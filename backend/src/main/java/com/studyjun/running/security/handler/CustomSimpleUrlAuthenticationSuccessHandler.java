@@ -6,7 +6,7 @@ import com.studyjun.running.entity.Token;
 import com.studyjun.running.repository.CustomAuthorizationRequestRepository;
 import com.studyjun.running.repository.TokenRepository;
 import com.studyjun.running.security.oAuth2.OAuth2Config;
-import com.studyjun.running.service.CustomTokenProviderService;
+import com.studyjun.running.security.service.CustomTokenProviderService;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

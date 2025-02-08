@@ -1,4 +1,4 @@
-package com.studyjun.running.service;
+package com.studyjun.running.security.service;
 
 import com.studyjun.running.common.UserPrincipal;
 import com.studyjun.running.dto.TokenDto;

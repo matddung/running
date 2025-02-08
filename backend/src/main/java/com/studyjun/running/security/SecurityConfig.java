@@ -1,10 +1,12 @@
 package com.studyjun.running.security;
 
-import com.studyjun.running.service.CustomDefaultOAuth2UserService;
+import com.studyjun.running.security.handler.CustomAuthenticationEntryPoint;
+import com.studyjun.running.security.service.CustomDefaultOAuth2UserService;
 import com.studyjun.running.repository.CustomAuthorizationRequestRepository;
 import com.studyjun.running.security.handler.CustomSimpleUrlAuthenticationFailureHandler;
 import com.studyjun.running.security.handler.CustomSimpleUrlAuthenticationSuccessHandler;
-import com.studyjun.running.service.CustomUserDetailsService;
+import com.studyjun.running.security.service.CustomOncePerRequestFilter;
+import com.studyjun.running.security.service.CustomUserDetailsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -29,7 +31,8 @@ public class SecurityConfig {
 
     private static final String[] ALLOWED_URIS = {
             "/", "/error", "/favicon.ico", "/*.html", "/*.css", "/*.js",
-            "/swagger", "/swagger-ui.html", "/swagger-ui/**", "/api-docs", "/api-docs/**", "/v3/api-docs/**"
+            "/swagger", "/swagger-ui.html", "/swagger-ui/**", "/api-docs", "/api-docs/**", "/v3/api-docs/**",
+            "/api/**"
     };
 
     @Bean

@@ -1,6 +1,5 @@
-package com.studyjun.running.security;
+package com.studyjun.running.security.service;
 
-import com.studyjun.running.service.CustomTokenProviderService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
