@@ -1,6 +1,10 @@
 package com.studyjun.running.entity;
 
-import lombok.*;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -12,6 +16,7 @@ public class User extends BaseEntity{
     @Indexed(unique = true)
     private String email;
 
+    @JsonIgnore
     private String password;
     private String nickname;
     private String provider;
